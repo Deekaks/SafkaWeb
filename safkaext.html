@@ -1,0 +1,134 @@
+<html>
+<title>SafkaExtension</title>
+
+<head>
+  <link rel="icon" type="image/png" href="images/favicon.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+  <div class="topnav">
+    <div class="logo">
+      <img src="images/favicon28px.png"> versio 0.2｜1920x1080p｜only functional tested resolution</img>
+    </div>
+
+    <div class="topnav-centered">
+      <p5>SafkaExtension Sivusto</p5>
+    </div>
+
+    <a href="https://safka.online/">Safka.Online Nettisivusto</a>
+    <a href="#Alas">Yhteydet</a>
+
+    <div class="topnav-right">
+      <a href="#tietoa">Graafinen Työ</a>
+    </div>
+
+  </div>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:40px">SafkaExtension Nettisivut</h1>
+      <p id="inf2"></p>
+      <a href='https://github.com/Deekaks/SafkaExtension2'><button>Katso Githubissa</button></a>
+    </div>
+  </div>
+  <h4 id="tietoa" align="center">Graafinen työ:</h4>
+  <p align="center">Logo on räätälöity versio alkuperäisestä "safka.online":ssa käytetystä logosta joka sisältää "E" kirjaimen.</p>
+
+  <div class="img1">
+    <img src="images/favicon28px.png" class="img4">
+    <img src="images/favicon48px.png" class="img4">
+    <img src="images/favicon128px.png" class="img4">
+    <img src="images/favicon168px.png" class="img4">
+  </div>
+  <p align="center">Logoja tein 4 eri kappaletta, kokoina "28px", "48px", "128px", ja "168px", eri käyttötarkoituksiin esimerkiksi chrome web storen sisällä<br><br></p>
+  <p align="center">Alla näkee itse lisäosan Wilman työjärjestys sivuilla, tuote toimii tällä hetkellä vain edu.turku.fi, sekä microsoft365.com sivustoilla.</p>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/safkaimage.png" style="width:100%">
+      <div class="text"></div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/lorempicsum2.jpg" style="width:100%">
+      <div class="text">Paikkaapitävä kuva</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/lorempicsum3.jpg" style="width:100%">
+      <div class="text">Paikkaapitävä kuva</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+    if (new Date().getHours() < 13) {
+      document.getElementById("inf2").innerHTML = "Hyvää aamupäivää!";
+    } else {
+      document.getElementById("inf2").innerHTML = "Hyvää iltapäivää!"
+    }
+  </script>
+  <div class="info">
+    <h4 align="center">Tietoa projektista:</h4>
+    <p1>
+      Sivuston ideana on luoda jossain vaiheessa kotisivusto johon voi johdattaa Chrome Web Storesta ihmisiä ja kertoa paremmin projektin tarkoitus.
+    </p1>
+    <p1>
+      Alkuperäinen syy itse lisäosaan tuli luokkalaisten tekemästä sivustosta josta näkee ruokalistan, ajattelin että näkisi sen myös Wilman yhteydessä.
+    </p1>
+  </div>
+  <br>
+  <div>
+    <h2 id="Alas">Yhteystiedot</h2>
+  </div>
+  </h2>
+  <footer>
+    <p2>Alex Tenhu<br>
+      <a href="mailto:at0624@edu.turku.fi">at0624@edu.turku.fi</a>
+      <br>
+      <a href="https://github.com/Deekaks">GitHub</a>
+    </p2>
+  </footer>
+</body>
+
+</html>
