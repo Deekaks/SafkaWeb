@@ -7,3 +7,5 @@
 
 #### Tällä hetkellä ainoa tuettu resoluutio on 1920x1080, tietokoneella.
 - Koodipohja on suoraan sanottuna hirveän näköinen ja sekalainen
+
+- https://github.com/Deekaks/SafkaExtension
