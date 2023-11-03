@@ -5,7 +5,10 @@
 
 
 
-#### Tällä hetkellä ainoa tuettu resoluutio on 1920x1080, tietokoneella.
+#### Tällä hetkellä ainoa verkkosivun tuettu resoluutio on 1920x1080, tietokoneella.
 - Koodipohja on suoraan sanottuna hirveän näköinen ja sekalainen
 
-- https://github.com/Deekaks/SafkaExtension2
+
+
+### SafkaExtension Linkki
+- https://github.com/Deekaks/SafkaExtension2 < Lisäosa itse
